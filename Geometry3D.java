@@ -2,18 +2,20 @@ public class Geometry3D {
 
     // Other methods...
 
-    public static double calculateTetrahedronVolume(double edgeLength) {
+    public static double calculateTetrahedronSurfaceArea(double edgeLength) {
         // Validate input parameters if needed
         if (edgeLength <= 0) {
             throw new IllegalArgumentException("Invalid edge length for a tetrahedron.");
         }
 
-        // Calculate the volume of the tetrahedron
-        double volume = Math.pow(edgeLength, 3) / (6 * Math.sqrt(2));
+        // Calculate the surface area of the tetrahedron
+        double surfaceArea = Math.sqrt(3) * Math.pow(edgeLength, 2);
 
-        return volume;
+        return surfaceArea;
     }
 }
+
+
 
 
 

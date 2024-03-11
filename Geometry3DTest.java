@@ -5,18 +5,19 @@ import org.junit.jupiter.api.Test;
 class Geometry3DTest {
 
     @Test
-    void testTetrahedronVolume() {
+    void testTetrahedronSurfaceArea() {
         // Given
         double edgeLength = 3.0;
         double epsilon = 0.1;
 
         // When
-        double calculatedVolume = Geometry3D.calculateTetrahedronVolume(edgeLength);
+        double calculatedSurfaceArea = Geometry3D.calculateTetrahedronSurfaceArea(edgeLength);
 
         // Then
-        assertEquals(1.0, calculatedVolume, epsilon);
+        assertEquals(7.794, calculatedSurfaceArea, epsilon);
         
     }
 }
+
 
 
