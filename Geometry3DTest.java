@@ -5,18 +5,18 @@ import org.junit.jupiter.api.Test;
 class Geometry3DTest {
 
     @Test
-    void testSquarePyramidVolume() {
+    void testTetrahedronVolume() {
         // Given
-        double baseLength = 4.0;
-        double height = 3.0;
+        double edgeLength = 3.0;
         double epsilon = 0.1;
 
         // When
-        double calculatedVolume = Geometry3D.calculateSquarePyramidVolume(baseLength, height);
+        double calculatedVolume = Geometry3D.calculateTetrahedronVolume(edgeLength);
 
         // Then
-        assertEquals(4.0, calculatedVolume, epsilon);
-    
+        assertEquals(1.0, calculatedVolume, epsilon);
+        
     }
 }
+
 
