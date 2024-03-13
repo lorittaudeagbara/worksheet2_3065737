@@ -41,6 +41,18 @@ public static double calculateCuboidSurfaceArea(double length, double width, dou
 
     return volume;
 }
+//Task 6
+public static double calculateSquarePyramidSurfaceArea(double baseLength, double slantHeight) {
+    // Validate input parameters if needed
+    if (baseLength <= 0 || slantHeight <= 0) {
+        throw new IllegalArgumentException("Invalid dimensions for a square-based pyramid.");
+    }
+
+    // Calculate the surface area of the square-based pyramid
+    double surfaceArea = baseLength * (baseLength + Math.sqrt(Math.pow(slantHeight, 2) + Math.pow(baseLength / 2.0, 2)));
+
+    return surfaceArea;
+}
 }
 
 
